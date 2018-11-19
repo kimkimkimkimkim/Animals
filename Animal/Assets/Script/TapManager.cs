@@ -26,6 +26,7 @@ public class TapManager : MonoBehaviour {
 	}
 
 	private void Update(){
+		if(PlayerPrefs.GetInt("canMove") == 0)return;
 		//クリックを検知
 		if(Input.GetMouseButtonDown(0)){
 			ShowHeart();

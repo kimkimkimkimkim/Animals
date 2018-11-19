@@ -17,6 +17,7 @@ public class PinchInOut : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
+        if(PlayerPrefs.GetInt("canMove",1) == 0) return;
         // マルチタッチかどうか確認
         if (Input.touchCount >= 2)
         {
