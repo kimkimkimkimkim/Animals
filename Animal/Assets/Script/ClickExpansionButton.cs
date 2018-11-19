@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ClickHomeButton : MonoBehaviour {
+public class ClickExpansionButton : MonoBehaviour {
 
 	public GameObject island; //島
 	public GameObject gachaArea; //ガチャエリア
@@ -10,10 +10,10 @@ public class ClickHomeButton : MonoBehaviour {
 	public GameObject expansionView; //拡張画面
 
 	public void OnClick(){
-		PlayerPrefs.SetInt("canMove",1); //動かせるように
-		island.GetComponent<MoveIsland>().MoveDown();
-		gachaArea.SetActive(true);
+		PlayerPrefs.SetInt("canMove",0);
+		expansionView.SetActive(true);
 		boxView.SetActive(false);
-		expansionView.SetActive(false);
+		gachaArea.SetActive(false);
+		island.GetComponent<MoveIsland>().MoveUp();
 	}
 }
