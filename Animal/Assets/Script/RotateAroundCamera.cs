@@ -25,6 +25,7 @@ public class RotateAroundCamera : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(PlayerPrefs.GetInt("canMove",1) == 0 || Input.touchCount >= 2)return;
+
 		if(Input.GetMouseButtonDown(0)){
 			backPos = Input.mousePosition;
 			newPos = Input.mousePosition;

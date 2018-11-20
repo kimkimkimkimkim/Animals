@@ -10,7 +10,7 @@ public class ClickExpansionButton : MonoBehaviour {
 	public GameObject expansionView; //拡張画面
 
 	public void OnClick(){
-		PlayerPrefs.SetInt("canMove",0);
+		//PlayerPrefs.SetInt("canMove",0);
 		expansionView.SetActive(true);
 		boxView.SetActive(false);
 		gachaArea.SetActive(false);

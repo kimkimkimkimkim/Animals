@@ -10,7 +10,7 @@ public class ClickAnimalButton : MonoBehaviour {
 	public GameObject expansionView; //拡張画面
 
 	public void OnClick(){
-		PlayerPrefs.SetInt("canMove",0);
+		//PlayerPrefs.SetInt("canMove",0);
 		view.SetActive(true); //Viewの表示
 		expansionView.SetActive(false);
 		gachaArea.SetActive(false); //ガチャエリアの非表示
