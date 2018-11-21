@@ -7,6 +7,8 @@ public class DataManager : MonoBehaviour {
 	/*
 	 {
 		 "canMove", int スワイプやピンチインアウトでカメラを移動できるかどうか
+		 "gacha1Time", string 1番目のガチャの生まれる時刻 孵化完了なら"finish" ガチャできる状態なら"null"
+
 	 }
 	 */
 	void Start () {

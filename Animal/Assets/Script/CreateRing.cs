@@ -39,5 +39,6 @@ public class CreateRing : MonoBehaviour {
 		GameObject ring = (GameObject)Instantiate(ringPrefab);
 		ring.transform.SetParent(this.transform,false);
 		ring.GetComponent<RectTransform>().localPosition = new Vector3(0,-90,0);
+		ring.transform.SetSiblingIndex(0);
 	}
 }
